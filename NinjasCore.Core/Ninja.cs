@@ -7,6 +7,12 @@ namespace NinjasCore.Core
         public int Id { get; set; }
         public string Name { get; set; }
         public Gender Sex { get; set; }
+        public DateTime Updated { get; set; }
+
+        public Ninja()
+        {
+            this.Updated = DateTime.Now;
+        }
     }
 
 }
